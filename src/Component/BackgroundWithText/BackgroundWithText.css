@@ -1,0 +1,25 @@
+.background-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .text-container{
+    left:50% !important;
+  }
+  .text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: orange;
+    z-index: 12;
+    white-space: nowrap;
+    font-family: monospace;
+  } 

@@ -1,0 +1,85 @@
+.horizontalCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 60vh;
+}
+
+.horizontalCard_container {
+    display: flex;
+    width: 80vw;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.horizontalCard img {
+    width: 50vw;
+    height: 50vh; 
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.horizontalCard_content {
+    padding: 20px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontalCard_title {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.horizontalCard_text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.horizontalCard_button {
+    align-self: flex-start;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.horizontalCard_button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.horizontalCard_container.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width:1000px){
+    .horizontalCard{
+        height:70vh;
+    }
+    .horizontalCard_container{
+        display:block;  
+        /* height:70vh; */
+        /* margin-top:40vh; */
+    }
+    .horizontalCard img {
+        width: 80vw;
+        height:40vh;
+    }
+    .horizontalCard_content {
+        width: auto;
+        height:30vh;
+    }
+}

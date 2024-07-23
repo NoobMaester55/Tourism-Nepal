@@ -1,0 +1,25 @@
+.BlueAndRedTextContainer{
+    margin-top:50vh;
+}
+.BlueAndRedTextContainer .BlueAndRedTextContainer-text-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top:10vh;
+}
+.BlueAndRedTextContainer-text-box h1 {
+	font-size: 4vw;
+	font-weight: 900;
+	background-color: #B31312;
+	color: #EEE2DE;
+	display: block;
+	padding: .4em;
+}
+
+.BlueAndRedTextContainer-text-box h1:nth-child(2) {
+	position: absolute;
+	background-color: #2B2A4C;
+	color: #EEE2DE;
+	clip-path: inset(-1% -1% 50% -1%);
+}

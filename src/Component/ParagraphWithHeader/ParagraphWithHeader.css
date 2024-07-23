@@ -1,0 +1,75 @@
+.paragraphwithHeader_Container{
+	height:90vh;
+}
+ .paragraphwithHeader_header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top:10vh;
+	animation : fadeIn1 linear;
+    animation-timeline:view();
+    animation-range:entry 0% cover 50%;
+}
+
+.paragraphwithHeader_Container h1 {
+	font-size: 4vw;
+	font-weight: 900;
+	background-color: #B31312;
+	color: #EEE2DE;
+	display: block;
+	padding: .4em;
+}
+
+.paragraphwithHeader_Container h1:nth-child(2) {
+	position: absolute;
+	background-color: #2B2A4C;
+	color: #EEE2DE;
+	clip-path: inset(-1% -1% 50% -1%);
+}
+.paragraphwithHeader_paragraph{
+  height:auto;
+  margin-left:25vw;
+  margin-right:25vw;
+  margin-bottom:1vw;
+  border:1px solid black;
+  animation : fadeIn linear;
+    animation-timeline:view();
+	animation-range:entry 0% cover 50%;
+}
+
+.paragraphwithHeader_Container p {
+  text-align: justify;
+  font-size:1.3rem;
+  margin:20px;
+}
+
+
+..paragraphwithHeader_Container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+@media (max-width: 700px){
+	.paragraphwithHeader_Container{
+		height:auto;
+	}
+  .paragraphwithHeader_paragraph{
+    margin-left:10vw;
+    margin-right:10vw;
+  }
+  .paragraphwithHeader_Container h1{
+    margin-top:5vh;
+  } 
+}
+

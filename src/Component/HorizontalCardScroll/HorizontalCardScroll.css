@@ -1,0 +1,23 @@
+.HorizontalCardScroll_carousel{
+    height:500vh;
+}
+.HorizontalCardScroll_Container{
+    /* heigth:70vh; */
+    position:sticky;
+    top:0;
+    align-items:center;
+    justify-content:flex-start;
+    overflow:hidden;
+}
+.HorizontalCardScroll_images{
+    display:grid;
+    grid-template-column:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-gap:3vw;
+    padding:0 4rem 0 4rem;
+}
+.HorizontalCardScroll_imageItems{
+    display:flex;
+    margin-top:20vh;
+    margin-bottom:20vh;
+}
