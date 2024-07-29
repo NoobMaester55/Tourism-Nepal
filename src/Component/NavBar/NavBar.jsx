@@ -40,9 +40,6 @@ export const NavBar = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-  const handleClick = () => {
-    alert(`This Section is not currently available`);
-  };
 
   return (
     <nav className={color ? "navBar navBarBg" : "navBar"}>
@@ -114,7 +111,7 @@ export const NavBar = () => {
           </div>
         </li>
         <li>
-          <Link to="/" onClick={handleClick}>Travel Agencies</Link>
+          <Link to="/TravelAgencies">Travel Agencies</Link>
         </li>
 
       </ul>

@@ -10,7 +10,7 @@ const truncateText = (text, charLimit) => {
 };
 
 export default function HorizontalCard({ Imgsrc, Title, Description, reverse, learnMorePath }) {
-    const truncatedDescription = truncateText(Description, 250);
+    const truncatedDescription = truncateText(Description, 150);
 
     return (
         <div className="horizontalCard fadeIn1">

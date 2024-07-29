@@ -10,6 +10,7 @@ import AdventureSection from './Section/AdventureSection';
 import MountainSection from './Section/MountainSection';
 import WildlifeSection from './Section/WildlifeSection';
 import PlaceDetail from './Section/PlaceDetail';
+import TravelAgencies from './Section/TravelAgencies'
 
 import Location from './Section/Location';
 import data from './Data/data';
@@ -29,7 +30,9 @@ function App() {
           <Route path="/adventure" element={<AdventureSection />} />
           <Route path="/mountain" element={<MountainSection />} />
           <Route path="/wildlife" element={<WildlifeSection />} />
+          <Route path="/TravelAgencies" element={<TravelAgencies />} />
           <Route path="/:placeId" element={<PlaceDetail />} />
+          
 
           {locations.map(location => {
             const places = data.filter(place => place.Location === location);
