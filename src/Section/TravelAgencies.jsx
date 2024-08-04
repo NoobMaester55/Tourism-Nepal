@@ -1,10 +1,13 @@
-// TravelAgencies.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '../Component/Card4';
 import TravelAgenciesData from '../Data/TravelAgenciesData';
 import { useInView } from 'react-intersection-observer';
 
 export default function TravelAgencies() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     const backgroundStyle = {
         background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i0.wp.com/www.alphaadventuretreks.com/blog/wp-content/uploads/2023/07/Nepal-Tour-Packages-From-Malaysia.jpeg?fit=1200%2C800&ssl=1) no-repeat center',
         backgroundSize: 'cover'

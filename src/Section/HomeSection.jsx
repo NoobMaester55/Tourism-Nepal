@@ -26,6 +26,7 @@ import Chitwan from '/image/Chitwan.jpg'
 import Basecamp from '/image/baseCamp.jpg'
 import Lumbini from '/image/Lumbini.jpg'
 
+
 function HeroSection() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -113,8 +114,7 @@ function HeroSection() {
             <div className='fadeIn1'>
                 <BlueAndRedText Text={"Popular Tourist Destinations"} />
             </div>
-            <Places places={places}
-            />
+            <Places places={places} />
         </>
     );
 }

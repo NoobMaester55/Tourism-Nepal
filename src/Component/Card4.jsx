@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ image, title, stars, numberOfRatings , description }) => {
+const Card = ({ image, title, stars, numberOfRatings, description, website }) => {
   const RatingSection = ({ stars, numberOfRatings }) => {
     const maxStars = 5;
     const filledStars = Math.min(Math.max(stars, 0), maxStars); // Ensuring stars is between 0 and maxStars
@@ -23,6 +23,10 @@ const Card = ({ image, title, stars, numberOfRatings , description }) => {
     );
   };
 
+  const handleReadMoreClick = () => {
+    window.open(website, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="bg-gray-800 text-white rounded-lg shadow-md overflow-hidden mb-6">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
@@ -30,7 +34,7 @@ const Card = ({ image, title, stars, numberOfRatings , description }) => {
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <RatingSection stars={stars} numberOfRatings={numberOfRatings} />
         <p className="text-gray-300 mb-4">{description}</p>
-        <button className="text-blue-500 hover:underline">
+        <button onClick={handleReadMoreClick} className="text-blue-500 hover:underline">
           Read more →
         </button>
       </div>
