@@ -89,14 +89,27 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="Lumbini"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50">Lumbini
+                      <Link
+                        className="text-md leading-6 text-gray-300 hover:text-gray-50"><a
+                          href="https://images.unsplash.com/photo-1715753990431-192c4e1695b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXJzZW5hbCUyMGxvZ298ZW58MHx8MHx8fDA%3D"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Don't Click 1
+                        </a>
                       </Link>
                     </li>
                     <li>
-                      <Link to="Everest"
-                        className="text-md leading-6 text-gray-300 hover:text-gray-50">Mount Everest
+                      <Link
+                        className="text-md leading-6 text-gray-300 hover:text-gray-50"><a
+                          href="https://drive.google.com/file/d/1L6GidUzuDIW7kt5v-sWaOUjKGzPROX3-/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Don't Click
+                        </a>
                       </Link>
+
                     </li>
                   </ul>
                 </div>
